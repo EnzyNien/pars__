@@ -26,7 +26,7 @@ class pars_cls():
 			free_time_arr = []
 			busy_time_arr = []
 			day_class = parser.parse(column.find('',{'class':'gridHeaderDate'})['data-content'])
-			day = day_class.strftime("%Y-%m-%y")
+			day = day_class.strftime("%Y-%m-%d")
 			free_time = column.find_all('',{'class':self.p_gridFree})
 			free_time_arr = [self.returnTime(i) for i in free_time]
 			busy_time = column.find_all('',{'class':self.p_gridBusy})
